@@ -1,0 +1,40 @@
+2024-06-24 21:10:21,762 - dustapi_logger - INFO - GET / - 404
+2024-06-24 21:15:03,661 - dustapi_logger - INFO - GET /hello - 404
+2024-06-24 21:15:18,683 - dustapi_logger - INFO - GET /json - 404
+2024-06-24 21:18:33,201 - dustapi_logger - INFO - GET /json - 404
+2024-06-24 21:19:31,334 - dustapi_logger - INFO - GET /json - 200
+2024-06-24 21:23:16,540 - dustapi_logger - ERROR - Error rendering template index.html: index.html
+2024-06-24 21:23:16,545 - dustapi_logger - ERROR - Unhandled exception: index.html
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\anaconda3\Lib\site-packages\dustapi\application.py", line 150, in async_wsgi_app
+    response = await self.router.dispatch(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\anaconda3\Lib\site-packages\dustapi\routing.py", line 13, in dispatch
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\anaconda3\Lib\site-packages\dustapi\application.py", line 82, in wrapped_handler
+    return await handler()
+           ^^^^^^^^^^^^^^^
+  File "D:\dust_test\app.py", line 20, in home
+    return app.render_template('index.html', title="Home", heading="Welcome to dustapi Framework", content="This is the home page.")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\anaconda3\Lib\site-packages\dustapi\application.py", line 98, in render_template
+    template = self.template_env.get_template(template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\anaconda3\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\anaconda3\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\anaconda3\Lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\anaconda3\Lib\site-packages\jinja2\loaders.py", line 204, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2024-06-24 21:23:16,562 - dustapi_logger - INFO - GET / - 500
+2024-06-24 21:24:24,189 - dustapi_logger - INFO - GET / - 200
+2024-06-24 23:11:25,196 - dustapi_logger - INFO - GET / - 200
+2024-06-24 23:11:38,558 - dustapi_logger - INFO - GET /json - 200
+2024-06-24 23:11:47,961 - dustapi_logger - INFO - GET /hello - 200
