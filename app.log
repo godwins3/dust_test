@@ -38,3 +38,20 @@ jinja2.exceptions.TemplateNotFound: index.html
 2024-06-24 23:11:25,196 - dustapi_logger - INFO - GET / - 200
 2024-06-24 23:11:38,558 - dustapi_logger - INFO - GET /json - 200
 2024-06-24 23:11:47,961 - dustapi_logger - INFO - GET /hello - 200
+2024-07-01 23:46:12,089 - dustapi_logger - INFO - WebSocket server running on localhost:5001
+2024-07-02 00:05:12,116 - dustapi_logger - INFO - Serving on localhost:5000
+2024-07-02 00:06:35,786 - dustapi_logger - INFO - GET /hello - 200
+2024-07-02 00:06:36,187 - dustapi_logger - INFO - GET /favicon.ico - 404
+2024-07-02 00:07:24,447 - dustapi_logger - INFO - Serving on localhost:5000
+2024-07-02 00:07:39,051 - dustapi_logger - INFO - GET /hello - 200
+2024-07-02 00:10:41,071 - dustapi_logger - INFO - HTTP task joined successfully
+2024-07-02 00:10:41,072 - dustapi_logger - INFO - Dust server gracefully stopped
+2024-07-02 00:10:41,073 - dustapi_logger - INFO - HTTP task joined successfully
+2024-07-02 00:10:41,074 - dustapi_logger - INFO - Dust server gracefully stopped
+2024-07-02 00:13:37,922 - dustapi_logger - INFO - Serving on localhost:5000
+2024-07-02 00:13:54,674 - dustapi_logger - INFO - GET /json - 200
+2024-07-02 00:14:35,421 - dustapi_logger - INFO - HTTP task joined successfully
+2024-07-02 00:14:35,421 - dustapi_logger - INFO - Dust server gracefully stopped
+2024-07-02 00:14:35,421 - dustapi_logger - INFO - HTTP task joined successfully
+2024-07-02 00:14:35,422 - dustapi_logger - INFO - Dust server gracefully stopped
+2024-07-02 00:27:17,463 - dustapi_logger - INFO - Serving on localhost:5000

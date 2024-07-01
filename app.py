@@ -1,8 +1,8 @@
-from dustapi.application import Application, get_request
+from dustapi.application import Dust, get_request
 from dustapi.responses import JsonResponse, HtmlResponse, Response
 import os
 
-app = Application()
+app = Dust()
 
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
@@ -52,10 +52,6 @@ async def upload_file():
 
     return f"File {filename} uploaded successfully"
 
-@app.websocket('/ws')
-async def echo(websocket, path):
-    async for message in websocket:
-        await websocket.send(f"Echo: {message}")
 
 # Custom error handler for ValueError
 @app.errorhandler(ValueError)
